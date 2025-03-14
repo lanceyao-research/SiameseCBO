@@ -11,8 +11,8 @@ To correct the drifting. One can use a CNN to predict the current drift from the
   
 It looks like the a Siamese CNN is able to predict the drift velocity (maybe other instrument offsets as well) from the image pairs. There are three worth noting points here:   
 1. Until we have collected a sufficient number of training samples (appears to be 500-1000) the model prediction does not make sense and thus useless.  
-2. The drift velocity labels provided are highly quantitative. Such labels must requires very strong human supervision. It's very inefficient or impractical to generate such labels on experimental data.  
-3. For experimental implementation, it actually not practical to collect the samples with random instrument status. Most of the times, instruments are stably settled at some offsets given the same sample in the same day. It's not practical to wait for other users to mess up the instrument or wait for a few days to collect the next datapoint.  
+2. The drift velocity labels provided are highly quantitative. Such labels must require very strong human supervision. It's very inefficient or impractical to generate such labels on experimental data.  
+3. For experimental implementation, it's actually not practical to collect the samples with random instrument status. Most of the times, instruments are stably settled at some offsets given the same sample in the same day. It's not practical to wait for other users to mess up the instrument or wait for a few days to collect the next datapoint.  
   
 Let's expore an alternative algorithm to solve the issues above:  
   
