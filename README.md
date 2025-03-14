@@ -1,2 +1,2 @@
 # SiameseCBO
-See if we can train a CNN together with Contextual Bayesian Optimization 
+See if we can train a CNN together during a Contextual Bayesian Optimization 
