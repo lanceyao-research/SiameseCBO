@@ -16,7 +16,9 @@ It looks like the a Siamese CNN is able to predict the drift velocity (maybe oth
   
 Let's expore an alternative algorithm to solve the issues above:  
   
-Here we use a Contextual Bayesian Optimization (CBO) model to solve the problem. The model has a Siamese CNN based embedding network to learn the latent variables (ideally the drift x and y, but let's see) from the image pairs. Then a Gaussian Process layer with four input nodes is used to predict a reward score, where two nodes takes the CNN outputs and the other two represent the counter-actions. The hope is: 1. In short times or during the initial stages, despite the output of the CNN does not makes sense, some good condition could still be found by the GP layers through BO process. And any data point generated during this process could be used to train the CNN. 2. Once the CNN is trained, the GP layers do not have to go through a lot of BO steps. Instead, it directly outputs the optimal action.  
+Here we use a Contextual Bayesian Optimization (CBO) model to solve the problem. The model has a Siamese CNN based embedding network to learn the latent variables (ideally the drift x and y, but let's see) from the image pairs. Then a Gaussian Process layer with four input nodes is used to predict a reward score, where two nodes takes the CNN outputs and the other two represent the counter-actions. The hope is:  
+1. In short times or during the initial stages, despite the output of the CNN does not makes sense, some good condition could still be found by the GP layers through BO process. And any data point generated during this process could be used to train the CNN.  
+2. Once the CNN is trained, the GP layers do not have to go through a lot of BO steps. Instead, it directly outputs the optimal action.  
   
 ![image](https://github.com/user-attachments/assets/a6522a69-c856-4ab3-9cdf-ba036bd38718)  
   
