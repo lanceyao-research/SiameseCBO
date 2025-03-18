@@ -28,6 +28,7 @@ This project is still under development. And the idea above is not fully validat
 1. The GP layers could be trained with a pre-trained and untrainable CNN and seem to work.  
 2. The randomly intialized Siamese CNN overfits crazily when trained together with the GP layers.  
 3. Implemented the reward function as the distance to optimal condition at this point. It was supposed to be MSE/SSIM.  
+  
 03/17/2025 current stage:  
   
 Achieved the joint training of the Siamese CNN and GP on existing data (no BO): there is still crazy overfitting but not after your have included ~1000 training datapoints. When you don't have enough training data, the CNN overfits by directly learning to map the images to the rewards (mostly ignoring the actions) to get very low loss. Somehow this is doable on a not-big-enough dataset.  
