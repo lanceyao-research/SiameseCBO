@@ -20,7 +20,9 @@ Here we use a Contextual Bayesian Optimization (CBO) model to solve the problem.
 1. In short times or during the initial stages, despite the output of the CNN does not makes sense, some good condition could still be found by the GP layers through BO process. And any data point generated during this process could be used to train the CNN.  
 2. Once the CNN is trained, the GP layers do not have to go through a lot of BO steps. Instead, it directly outputs the optimal action.  
   
-![image](https://github.com/user-attachments/assets/a6522a69-c856-4ab3-9cdf-ba036bd38718)  
+![Picture2](https://github.com/user-attachments/assets/3d94e3cd-ff3c-4e4a-b4b3-6ac2e711af03)
+  
+========================================================================  
   
 This project is still under development. And the idea above is not fully validated.  
 03/14/2025 current stage:  
@@ -36,4 +38,6 @@ This project is still under development. And the idea above is not fully validat
   
 03/24/2025 current stage:  
   
-1. Overfitting problem is solved in the 1D demostration by a sampling strategy. Now the algorithm is ready  
+1. Overfitting problem is solved in the 1D demostration by a sampling strategy. Now the algorithm is ready
+  
+
