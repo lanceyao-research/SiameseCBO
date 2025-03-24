@@ -32,4 +32,8 @@ This project is still under development. And the idea above is not fully validat
 03/17/2025 current stage:  
   
 1. Achieved the joint training of the Siamese CNN and GP on existing data (no BO): there is still crazy overfitting but not after your have included ~1000 training datapoints. When you don't have enough training data, the CNN overfits by directly learning to map the images to the rewards (mostly ignoring the actions) to get very low loss. Somehow this is doable on a not-big-enough dataset.
-2. Implemented the correct reward function as MSE/SSIM. This did not bring any noticeable difference/obstacles in the training behavior.  
+2. Implemented the correct reward function as MSE/SSIM. This did not bring any noticeable difference/obstacles in the training behavior.
+  
+03/24/2025 current stage:  
+  
+1. Overfitting problem is solved in the 1D demostration by a sampling strategy. Now the algorithm is ready  
