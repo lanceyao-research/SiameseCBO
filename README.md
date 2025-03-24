@@ -40,4 +40,4 @@ This project is still under development. And the idea above is not fully validat
   
 1. Overfitting problem is solved in the 1D demostration by a sampling strategy. Now the algorithm is ready
   
-
+![Demo Animation](https://github.com/lanceyao-research/SiameseCBO/blob/main/animation.gif)  
